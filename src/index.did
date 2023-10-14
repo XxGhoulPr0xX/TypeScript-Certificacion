@@ -1,1 +1,5 @@
-service : () -> { get_message : () -> (text) query; set_message : (text) -> () }
+service: () -> {
+    checkAnswer: (text, text) -> (text);
+    getQuestion: (text) -> (text) query;
+    setNumber: (text, text) -> ();
+}
